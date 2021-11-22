@@ -1,0 +1,31 @@
+{
+  "arsinkomstFranAnstallning": 420000,
+  "arsarbetstid": 260,
+  "arbetstidTyp": "Dagar",
+  "datumLoneavtaletSkrevsPa": null,
+  "fromDatum": null,
+  "arsinkomstEgenVerksamhet": null,
+  "karens": null,
+  "inkomstFranAnnatLand": null,
+  "gammalLon": true,
+  "original": {
+    "arsinkomstSGIA": 420000,
+    "sgiAFran": "2015-10-01",
+    "arsarbetstid": 260,
+    "arbetstidTyp": "Dagar",
+    "vilandeSGIAArsinkomst": 270000,
+    "vilandeSGIAArsinkomstFran": "2014-07-25",
+    "arsinkomstSGIB": null,
+    "sgiBFran": null,
+    "vilandeSGIBArsinkomst": null,
+    "vilandeSGIBArsinkomstFran": null,
+    "karensLista": [
+      1,
+      7,
+      14,
+      30,
+      60,
+      90
+    ]
+  }
+}

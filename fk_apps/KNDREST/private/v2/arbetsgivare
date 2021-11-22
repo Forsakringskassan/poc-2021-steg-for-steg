@@ -1,0 +1,17 @@
+{
+  "arbetsgivarlista": [
+    {
+      "foretag": "KND POSTNORD SVERIGE AB",
+      "adress": "Gatuvägen 4711",
+      "organisationsnummer": "556711-5695",
+      "postnummer": "105 00",
+      "postort": "STOCKHOLM",
+      "telefonnummer": "010-4360000",
+      "befattning": "",
+      "borttagbar": true,
+      "lopNr": 1,
+      "kontaktpersonNamn": "Test Testorsson",
+      "kontaktpersonTelefonnummer": "555123123"
+    }
+  ]
+}

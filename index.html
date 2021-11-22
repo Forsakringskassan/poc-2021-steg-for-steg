@@ -1,0 +1,166 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        
+        <meta name="robots" content="noindex" />
+        <meta name="googlebot" content="noindex">
+        <meta name="googlebot-news" content="nosnippet">
+
+        <link
+            rel="stylesheet"
+            href="forsakringskassan-webpack-fkse-index-template/css/fk.css"
+        />
+        <link
+            rel="stylesheet"
+            href="forsakringskassan-webpack-fkse-index-template/css/devindex.css"
+        />
+        <link
+            rel="stylesheet"
+            href="fkui_css-variables/fkui-exp-css-variables.css"
+        />
+
+        <script>
+            const _XMLHttpRequest = XMLHttpRequest;
+            XMLHttpRequest = function () {
+                const xhr = new _XMLHttpRequest();
+
+                const _open = xhr.open;
+
+                xhr.open = function () {
+                    const method = arguments[0];
+                    const url = arguments[1];
+
+                    if (url.startsWith("/fk_apps")) {
+                        console.log(`Method: ${method} URL: ${url}`);
+
+                        const paramIndex = url.indexOf("?");
+                        if (paramIndex > -1) {
+                            arguments[1] = url.substring(0, paramIndex);
+                        }
+
+                        if (method !== "GET") {
+
+                            arguments[0] = "GET";
+                        }
+                    }
+
+                    return _open.apply(this, arguments);
+                };
+
+                return xhr;
+            }; 
+        </script>
+
+        <title>Ersättning för vab (DEMO APPLIKATION)</title>
+    </head>
+
+    <body>
+        <header class="site-wide clearfix">
+    <div id="printheader">
+        <img
+            src="/forsakringskassan-webpack-fkse-index-template/assets/fk-logo.svg"
+            width="200"
+            height="20"
+            alt="logotyp"
+        />
+    </div>
+    <div class="row">
+        <div class="wrapper clearfix">
+            <div class="logo-container">
+                <a href="/" id="fk-top-bar-logo" accesskey="1">
+                    <span
+                        >Försäkringskassans logotyp, länk till startsidan</span
+                    >
+                </a>
+            </div>
+        </div>
+        <div class="edge"></div>
+    </div>
+</header>
+
+        <div class="row applikationssida">
+            <main class="wpthemeMainContent columns">
+                <div class="wpthemeInner">
+                    <div class="wpthemeClear"></div>
+                </div>
+
+                <div
+                    id="layoutContainers"
+                    class="
+                        wpthemeLayoutContainers
+                        wpthemeLayoutContainersHidden
+                    "
+                >
+                    <div class="wpthemeInner">
+                        <div class="row layoutHeader">
+                            <div
+                                class="
+                                    component-container
+                                    wpthemeCol
+                                    ibmDndColumn
+                                    small-12
+                                    medium-12
+                                    large-8
+                                    columns
+                                "
+                                name="headerContainer"
+                            ></div>
+                        </div>
+                        <div class="row layoutContent">
+                            <div
+                                class="
+                                    component-container
+                                    wpthemeCol
+                                    ibmDndColumn
+                                    small-12
+                                    medium-12
+                                    large-8
+                                    columns
+                                "
+                                name="ibmMainContainer"
+                            >
+                                <div class="component-control">
+                                    <section
+                                        class="
+                                            ibmPortalControl
+                                            wpthemeControl
+                                            wpthemeHidden
+                                            a11yRegionTarget
+                                        "
+                                    >
+                                        <div class="wpthemeControlBody">
+                                            <div><link rel=stylesheet href=./css/app-d0ae3f07.232d9c8e.css type=text/css><div class=exp-vue-app-template><div id=app></div></div><script src=./js/chunk-vendors-0f485567.1c8bb394.js></script><script src=./js/chunk-vendors-60b88c48.e590ed79.js></script><script src=./js/chunk-vendors-939b520b.5c64d98c.js></script><script src=./js/chunk-vendors-48327a0f.d4928c89.js></script><script src=./js/chunk-vendors-e4173fa2.2e277203.js></script><script src=./js/chunk-vendors-d939e436.9cd33bd2.js></script><script src=./js/chunk-vendors-203e0718.6ad75583.js></script><script src=./js/chunk-vendors-b58f7129.14ad43e6.js></script><script src=./js/app-d0ae3f07.6146f5d4.js></script></div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpthemeClear"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="contentinfo">
+    <div class="row fk-footer-head">
+        <div
+            class="small-12 columns large-11 large-centered clearfix fk-footer-head-area"
+        >
+            <div
+                class="small-12 medium-12 large-4 columns fk-contact-info-col"
+            ></div>
+        </div>
+    </div>
+    <div class="row fk-footer-bottom">
+        <div
+            class="small-12 medium-12 large-11 large-centered columns fk-footer-bottom-area"
+        >
+            <div
+                class="small-12 medium-10 medium-offset-1 large-12 large-offset-0 columns fk-social-media-group"
+            ></div>
+        </div>
+    </div>
+</footer>
+
+</html>
