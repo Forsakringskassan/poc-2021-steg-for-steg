@@ -2,8 +2,8 @@
   "notifieringssattUppgifter": {
     "avsagtPappersutskick": true,
     "avisering": "EPOST",
-    "epostAdress": "exempel@fk.se",
-    "mobilNummer": "0031234567"
+    "epostAdress": "anna.andersson@example.net",
+    "mobilNummer": "070-1740605"
   },
   "atgardKravs": false,
   "utfasatPappersutskick": false,
