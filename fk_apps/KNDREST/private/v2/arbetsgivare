@@ -10,21 +10,8 @@
       "befattning": "",
       "borttagbar": true,
       "lopNr": 1,
-      "kontaktpersonNamn": "Yngve Andersson",
+      "kontaktpersonNamn": "Test Testorsson",
       "kontaktpersonTelefonnummer": "0104360022"
-    },
-    {
-      "foretag": "Radar",
-      "adress": "Utfartsv 7",
-      "organisationsnummer": "202100-5521",
-      "postnummer": "300 70",
-      "postort": "Backaryd",
-      "telefonnummer": "045511119",
-      "befattning": "Administratör",
-      "borttagbar": true,
-      "lopNr": 2,
-      "kontaktpersonNamn": "",
-      "kontaktpersonTelefonnummer": ""
     }
   ]
 }
